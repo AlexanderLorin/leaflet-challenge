@@ -1,121 +1,82 @@
-# (GT-VIRT-ATL-DATA-PT-09-2021-U-C)
+# Leaflet Homework: Visualizing Data with Leaflet
 
-Data Visualization & Analytics Boot Camp Curriculum
+## Background
 
-_"Tell me and I forget. Teach me and I remember. Involve me and I learn" - Benjamin Franklin_
+![1-Logo](Images/1-Logo.png)
+
+Welcome to the United States Geological Survey, or USGS for short. The USGS is responsible for providing scientific data about natural hazards, the health of our ecosystems and environment; and the impacts of climate and land-use change. Their scientists develop new methods and tools to supply timely, relevant, and useful information about the Earth and its processes. As a new hire, you will be helping them out with an exciting new project!
+
+The USGS is interested in building a new set of tools that will allow them to visualize their earthquake data. They collect a massive amount of data from all over the world each day, but they lack a meaningful way of displaying it. Their hope is that being able to visualize their data will allow them to better educate the public and other government organizations (and hopefully secure more funding) on issues facing our planet.
+
+### Before You Begin
+
+1. Create a new repository for this project called `leaflet-challenge`. **Do not add this homework to an existing repository**.
+
+2. Clone the new repository to your computer.
+
+3. Inside your local git repository, create a directory for the Leaflet challenge. Use the folder names to correspond to the challenges: **Leaflet-Step-1** and **Leaflet-Step-2**.
+
+4. This homework uses both **html** and **JavaScript** so be sure to add all the necessary files. These will be the main files to run for analysis.
+
+5. Push the above changes to GitHub or GitLab.
+
+## Your Task
+
+### Level 1: Basic Visualization
+
+![2-BasicMap](Images/2-BasicMap.png)
+
+Your first task is to visualize an earthquake data set.
+
+1. **Get your data set**
+
+   ![3-Data](Images/3-Data.png)
+
+   The USGS provides earthquake data in a number of different formats, updated every 5 minutes. Visit the [USGS GeoJSON Feed](http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) page and pick a data set to visualize. When you click on a data set, for example "All Earthquakes from the Past 7 Days", you will be given a JSON representation of that data. You will use the URL of this JSON to pull in the data for our visualization.
+
+   ![4-JSON](Images/4-JSON.png)
+
+2. **Import & Visualize the Data**
+
+   Create a map using Leaflet that plots all of the earthquakes from your data set based on their longitude and latitude.
+
+   * Your data markers should reflect the magnitude of the earthquake by their size and and depth of the earthquake by color. Earthquakes with higher magnitudes should appear larger and earthquakes with greater depth should appear darker in color.
+
+   * **HINT:** The depth of the earth can be found as the third coordinate for each earthquake.
+
+   * Include popups that provide additional information about the earthquake when a marker is clicked.
+
+   * Create a legend that will provide context for your map data.
+
+   * Your visualization should look something like the map above.
 
 - - -
 
-## Unit 0 - Prework
+### Level 2: More Data (Optional)
 
-* [Download the Anaconda Installation](https://www.anaconda.com/download/)
-* [Data Prework](https://coding-bootcamp-dataviz-prework.readthedocs-hosted.com/en/latest/)
+![5-Advanced](Images/5-Advanced.png)
 
-## Unit 1 - Microsoft Excel - [Solution](02-Homework/01-Excel/Solutions/)
+The USGS wants you to plot a second data set on your map to illustrate the relationship between tectonic plates and seismic activity. You will need to pull in a second data set and visualize it alongside your original set of data. Data on tectonic plates can be found at <https://github.com/fraxen/tectonicplates>.
 
-#### Student Guide
+In this step, you will:
 
-* [1.0 - Student Guide](01-Lesson/01-Excel/StudentGuide.md)
+* Plot a second data set on our map.
 
-#### Sessions
+* Add a number of base maps to choose from as well as separate out our two different data sets into overlays that can be turned on and off independently.
 
-* [1.1 - Zen of Data](https://docs.google.com/presentation/d/e/2PACX-1vRqWIiOVWh_5Wd4fENcFXWV0X3KQ0sVwcft9yGkIXioQngCxYyS81CwptCRwuoG5oHxR5vQOtW34cZL/pub?start=false&loop=false&delayms=3000)
-* [1.2 - Egad It's Excel](https://docs.google.com/presentation/d/e/2PACX-1vSI7NmnBrTG8luRYm9zQuoATuerWlz27o0yZ8xWnixuT7uKvHaY4fm3_vRGd-BEclUMt6EaZD2s3TST/pub?start=false&loop=false&delayms=3000)
-* [1.3 - Excel Plotting](https://docs.google.com/presentation/d/e/2PACX-1vRZEOXmdLey6qiSRogZgDqqzspeOw9tobtwHAub_qGpgD0IEXgcrYOTFTX9pzt2DX4pAI71IWzkWIh7/pub?start=false&loop=false&delayms=3000)
+* Add layer controls to our map.
 
-#### Video Guide
+- - -
 
-* [1.4 - Video Guide](01-Lesson/01-Excel/VideoGuide.md)
+### Assessment
 
-## Unit 2 - VBA Scripting - [Solution](02-Homework/02-VBA-Scripting/Solutions/)
+Your final product will be assessed according to [this grading rubric](Leaflet_Grading_Rubric.pdf)
 
-#### Student Guide
+**Good luck!**
 
-* [2.0 - Student Guide](01-Lesson/02-VBA-Scripting/StudentGuide.md)
+## Rubric
 
-#### Sessions
+[Unit 15 Rubric - Leaflet Homework - Visualizing Data with Leaflet](https://docs.google.com/document/d/1kDNeT4a54ik_AZrHYN3LmVMqH0hDuiwbK2h5lHNxumQ/edit?usp=sharing)
 
-* [2.1 - VBA Vibes](https://docs.google.com/presentation/d/e/2PACX-1vTBY9p33BvRsheGsBbF4VpM2HrHb2yyZgFN5CRRMPMv6gnnb_AAH4u1qu-geBHGm1tw39W3LUpviLAz/pub?start=false&loop=false&delayms=3000)
-* [2.2 - Vexing VBA](https://docs.google.com/presentation/d/e/2PACX-1vTiIQ9xQQP8PEOd0v6w80pjv1Rmi8DXP5m7BVyX70H_ixIu3fsYFIB_7b23770pK3qDWGLNk5rnMwoo/pub?start=false&loop=false&delayms=3000)
-* [2.3 - Getting Real with VBA](https://docs.google.com/presentation/d/e/2PACX-1vTShkFOmaSQ5EV5zSXln0K7mbWOM5BXEPtmTKMRAtgjmq6xAiZJ3Hb3H6Hx6Pv4NhHL763iCzIeg3FI/pub?start=false&loop=false&delayms=3000)
-
-#### Video Guide
-
-* [2.4 - Video Guide](01-Lesson/02-VBA-Scripting/VideoGuide.md)
-
-## Unit 3 - Python - [Solution](02-Homework/03-Python/Solutions/)
-
-* [3.0 - Student Guide](01-Lesson/03-Python/StudentGuide.md)
-* [3.4 - Video Guide](01-Lesson/03-Python/VideoGuide.md)
-
-## Unit 4 - Pandas - [Solution](02-Homework/04-Pandas/Solutions/)
-
-* [4.0 - Student Guide](01-Lesson/04-Pandas/StudentGuide.md)
-* [4.4 - Video Guide](01-Lesson/04-Pandas/VideoGuide.md)
-
-## Unit 5 - Matplotlib - [Solution](02-Homework/05-Matplotlib/Solutions/)
-
-* [5.0 - Student Guide](01-Lesson/05-Matplotlib/StudentGuide.md)
-* [5.4 - Video Guide](01-Lesson/05-Matplotlib/VideoGuide.md)
-
-## Unit 6 - Python APIs - [Solution](02-Homework/06-Python-APIs/Solutions/)
-
-* [6.0 - Student Guide](01-Lesson/06-Python-APIs/StudentGuide.md)
-* [6.4 - Video Guide](01-Lesson/06-Python-APIs/VideoGuide.md)
-
-## Unit 7 - Project 1
-
-* [7.0 - Student Guide](01-Lesson/07-Project-1/StudentGuide.md)
-
-## Unit 9 - SQL
-
-* [9.0 - Student Guide](01-Lesson/09-SQL/StudentGuide.md)
-* [9.4 - Video Guide](01-Lesson/09-SQL/VideoGuide.md)
-
-## Unit 10 - Advanced Data Storage and Retrieval
-
-* [10.0 - Student Guide](01-Lesson/10-Advanced-Data-Storage-and-Retrieval/StudentGuide.md)
-
-## Unit 11 - Web
-
-* [11.0 - Student Guide](01-Lesson/11-Web/StudentGuide.md)
-
-## Unit 12 - Web Scraping and Document Databases
-
-* [12.0 - Student Guide](01-Lesson/12-Web-Scraping-and-Document-Databases/StudentGuide.md)
-
-## Unit 13 - ETL Case Study Project
-
-* No Student Guide
-
-## Unit 14 - Interactive Web Visualizations
-
-* No Student Guide
-
-## Unit 15 - Mapping Web
-
-* [15.0 - Student Guide](01-Lesson/15-Mapping-Web/StudentGuide.md)
-
-## Unit 16 - Project 3 and R
-
-* [16.0 - Student Guide](01-Lesson/116-Project-3-and-Rb/StudentGuide.md)
-
-## Unit 17 - Project 3 Heroku Deployment
-
-* [17.1 - Heroku Deployment](01-Lesson/17-Project-3/Heroku_Deployment_Guide.md)
-
-## Unit 18 - Tableau
-
-* [18.0 - Student Guide](01-Lesson/18-Tableau/StudentGuide.md)
-
-## Unit 19 - Supervised Machine Learning
-
-* [19.0 - Student Guide](01-Lesson/19-Supervised-Machine-Learning/StudentGuide.md)
-
-## Unit 20 - Unsupervised Machine Learning
-
-* No Student Guide
-
-## Unit 21 - Deep Learning
-
-* No Student Guide
+___
+© 2021  Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.	
